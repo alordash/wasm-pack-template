@@ -185,7 +185,7 @@ impl Universe {
         let se = self.get_index(south, east);
         count += self.cells[se] as u8;
     
-        count
+        count as usize
     }
 
     pub fn toggle_cell(&mut self, row: usize, col: usize) {
